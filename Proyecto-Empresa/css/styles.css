@@ -1,0 +1,116 @@
+body{
+    background-color: #FE019A;
+}
+
+#boton_menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+
+}
+.nav-links {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #39FF14;
+    padding: 0.5em 1em;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #FF0000;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #C21E56;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+}
+
+form button[type="submit"] {
+    background-color: #FF0000;
+    color: #0F172A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+form button[type="submit"]:hover {
+    background-color: #8B0000;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 0.5em 1em;
+    }
+    .nav-links {
+        gap: 0.2em;
+    }
+    .nav-links a {
+        padding: 0.4em 0.7em;
+        font-size: 0.9em;
+    }
+    footer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 0.5em 1em;
+    }
+    #boton_menu {
+        display: block;
+        order: 3;
+    }
+    .nav-links.nav-activo {
+        display: flex;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        padding: 0.5em 0;
+        display: none;
+        order: 4;
+    }
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 0.8em 1em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    footer {
+        padding: 40px;
+    }
+    .contacto-grid {
+        flex-direction: column;
+    }
+    form input, form textarea {
+        width: 100%;
+    }
+}
