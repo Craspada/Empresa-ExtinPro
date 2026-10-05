@@ -1,5 +1,5 @@
 body{
-    background-color: #FE019A;
+    background-color: #FFFFFF;
 }
 
 #boton_menu {
@@ -8,7 +8,7 @@ body{
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #ffffff;
+    color: #0F172A;
 }
 
 nav {
@@ -23,7 +23,7 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #39FF14;
+    color: #1A365D;
     padding: 0.5em 1em;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 4px;
@@ -60,6 +60,11 @@ form button[type="submit"] {
 }
 form button[type="submit"]:hover {
     background-color: #8B0000;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
 }
 
 @media (max-width: 1024px) {
