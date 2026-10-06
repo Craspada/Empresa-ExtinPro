@@ -1,5 +1,22 @@
+:root{
+    --rojo: #DA041B;
+    --rojo-osc: #A00E16;
+    --carbon: #262626;
+    --gris: #4A4A4A;
+    --fondo: #F5F5F3;
+    --blanco: #FFFFFF;
+    --borde: #D9D9D6;
+    --acento: #F5B700;
+}
+
 body{
-    background-color: #FFFFFF;
+    background-color: var(--blanco);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 2em;
 }
 
 #boton_menu {
@@ -8,7 +25,7 @@ body{
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #0F172A;
+    color: var(--rojo-osc);
 }
 
 nav {
@@ -23,34 +40,34 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #1A365D;
+    color: var(--carbon);
     padding: 0.5em 1em;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 4px;
 }
 
 .nav-links a:hover {
-    color: #FF0000;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--rojo);
+    background-color: var(--fondo);
 }
 
 form label {
     display: block;
     margin-bottom: 0.5em;
-    color: #C21E56;
+    color: var(--rojo-osc);
 }
 
 form input, form textarea {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #E2E8F0;
+    border: 1px solid var(--borde);
     border-radius: 4px;
 }
 
 form button[type="submit"] {
-    background-color: #FF0000;
-    color: #0F172A;
+    background-color: var(--rojo);
+    color: var(--carbon);
     border: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -59,7 +76,7 @@ form button[type="submit"] {
     transition: background-color 0.3s;
 }
 form button[type="submit"]:hover {
-    background-color: #8B0000;
+    background-color: var(--rojo-osc);
 }
 
 #logo {
@@ -107,7 +124,7 @@ form button[type="submit"]:hover {
         width: 100%;
         text-align: center;
         padding: 0.8em 1em;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid var(--borde);
     }
     footer {
         padding: 40px;
